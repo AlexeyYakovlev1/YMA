@@ -1,0 +1,16 @@
+@import "./_vars.css";
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+}
+
+body {
+	font-family: var(--fontMontserrat);
+	font-weight: 400;
+}

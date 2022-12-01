@@ -1,0 +1,60 @@
+:root {
+  --mainFontColor: #eeee;
+  --headerHeight: 50px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  font-family: var(--fontJetBrainsMono);
+  flex-direction: column;
+  background-color: #121212;
+  color: var(--mainFontColor);
+  position: relative;
+  overflow: scroll;
+}
+
+.logo_update {
+  color: #ccc6;
+}
+
+.aside {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #454532;
+  align-items: center;
+}
+
+
+.header {
+  width: 100%;
+  background: linear-gradient(#202020, #151515);
+  display: flex;
+  position: sticky;
+  top: 0px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  height: var(--headerHeight);
+}
+
+.header__nav:first-child {
+  padding-left: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainFontColor);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: var(--headerHeight);
+}

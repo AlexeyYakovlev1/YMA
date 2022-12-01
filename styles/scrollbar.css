@@ -15,3 +15,5 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #232323;
 }
+
+/* Link this file to your html file to change scrollbar styles */

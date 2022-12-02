@@ -1,3 +1,224 @@
-@import "../../../styles/_global.css";
+body {
+    margin: 0;
+}
 
-/* styles for courses page */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgb(240, 240, 240);
+    z-index: 10;
+}
+
+.header__nav {
+    display: flex;
+    position: sticky;
+    top: 0;
+}
+
+.mainicon {
+    flex-grow: 1;
+    flex-basis: 20px;
+    width: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: inline-flex;
+    flex-grow: 11;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.header__nav-list a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 20px;
+    font-size: 30px;
+}
+
+footer {
+    background-color: black;
+    z-index: 10;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer img {
+    width: 40px;
+    height: auto;
+    border-radius: 100%;
+    background-color: unset;
+    margin: 20px;
+    padding: 10px;
+}
+
+.vk:hover {
+    transition: all 0.6s;
+    transform: scale(1.1);
+    background-color: rgb(41, 87, 187);
+}
+
+.inst:hover {
+    transition: all 0.6s;
+    transform: scale(1.1);
+    background-color: rgb(220, 228, 113);
+}
+
+.fabo:hover {
+    transition: all 0.6s;
+    transform: scale(1.1);
+    background-color: rgb(6, 66, 196);
+}
+
+.tech-content {
+    background-color: rgb(236, 230, 230);
+    position: relative;
+    flex-basis: 500px;
+    flex-wrap: nowrap;
+}
+
+.tech-cont-menu {
+    display: flex;
+    background-color: rgb(236, 230, 230);
+    width: 17%;
+    flex-wrap: nowrap;
+}
+
+.ul { 
+    display: flex block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 17%;
+    background-color: rgb(236, 230, 230);
+    height: inherit; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    z-index: 0;
+}
+
+.cat-nav-link-p {
+    text-align: center;
+    display: block;
+    flex-basis: 150px;
+    align-items: center;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.active {
+    background-color: #442B48;
+    color: rgb(236, 230, 230);
+}
+
+.tech_content_cont {
+    display: block;
+    background-color: #442B48;
+    position: relative;
+    justify-content: flex-end;
+    margin-left: 17%;
+    padding: 40px;
+}
+
+.tech-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tech-card {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #726E60;
+}
+
+.tech-card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.tech-card h3 {
+    color: black;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.tech-card p {
+    font-size: 20px;
+    margin: 5px;
+    color: black;
+    width: 250px;
+}
+
+.tech-card:hover {
+    transition: all 0.6s;
+    transform: scale(1.05);
+}
+
+.cardbut {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cardbut img {
+    border: none;
+}
+
+.cardbut button {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardbut_act {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: unset;
+}
+
+.cardbut button img {
+    width: 22px;
+    height: 22px;
+}
+
+button.buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: unset;
+    padding: 5px 10px;
+    color: black;
+}
+
+.cardbut button:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+    border-color: yellow;
+    cursor: pointer;
+    color: yellow;
+}

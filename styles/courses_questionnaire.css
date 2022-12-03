@@ -1,0 +1,80 @@
+.text-start{
+    margin-top: 10px;
+    margin-left: 44px;
+
+}
+
+.assessment_skills{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.mem_img{
+    height: 50px;
+}
+
+.hahsdh{
+    margin-bottom: 15px;
+}
+
+.btn-danger:hover{
+    background-color: blueviolet;
+    border-color: blueviolet;
+    transition: border-color 1000ms;
+
+    transition: background-color 500ms;
+}
+
+.block_with_a_picture{
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-img-top{
+    border-radius: 0px;
+}
+    
+.btn-riak-roll:hover{
+    background-color: red;
+    border-color: red;
+    transition: all 1000ms;
+}
+
+.btn-send-bank-info:hover{
+    background-color: green;
+    border-color: green;
+    transition: all 700ms;
+}
+
+
+/* Это стилизация для конкретного примера, вы можете стилизировать под свой макет */ 
+.change-photos {
+    width: 300px;
+  }
+  .change-photos .change-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Сразу скрываем вторую картинку */
+  .change-photos .change-photo:nth-of-type(2) {
+    display: none;
+  }
+  
+  /* При наведении курсора на родительский класс change-photos первую картинку скрываем, а вторую показываем */
+  
+  .change-photos:hover .change-photo:nth-of-type(1) {
+    display: none;
+  }
+  
+  .change-photos:hover .change-photo:nth-of-type(2) {
+    display: block;
+  }
+  
+  .change-photos:hover {
+    cursor: pointer;
+  }

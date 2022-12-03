@@ -1,0 +1,67 @@
+@import "./_global.css";
+
+/* styles for home page */
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    list-style-type: none;
+    padding: 20px 0;
+    background-color: rgb(240, 240, 240);
+}
+
+.mainicon {
+    flex-grow: 2;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav {
+    flex-grow: 8;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__nav-list li {
+    list-style-type: none;
+    padding: 15px;
+    margin: 5px;
+}
+
+.header__nav-list a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #49AAEE;
+    transition: all 0.6s;
+}
+
+.header__nav-list a:hover {
+    transform: scale(1.1);
+    color:#127488;
+}
+
+.hubback {
+    display: flex;
+    flex-grow: 2;
+}
+
+.hubback img { 
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+}
+
+.hubback img:hover {
+    transform: scale(1.1);
+}

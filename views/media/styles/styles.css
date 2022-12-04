@@ -172,7 +172,7 @@ img {
 
 .selling-item {
   display: flex;
-  max-width: 300px;
+  max-width: 400px;
   min-width: 100px;
   flex-direction: column;
   background-color: #171717;
@@ -218,8 +218,6 @@ img {
   margin: 30px;
   gap: 30px;
   flex: 1 1;
-  max-width: 400px;
-  min-width: 200px;
 }
 
 .button-type2 {

@@ -1,0 +1,41 @@
+@import url("../../../styles/_global.css");
+@import url("../../../styles/_vars.css");
+
+body {
+  font-family: var(--fontJetBrainsMono);
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(#121212, #222222);
+  color: #fff;
+  gap: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #fff;
+  text-align: center;
+  background-color: #454532;
+  transition: color .3s, background-color .3s;
+}
+
+a:hover {
+  color: #000;
+  background-color: #fff;
+}
+

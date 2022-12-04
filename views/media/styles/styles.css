@@ -159,6 +159,20 @@ img {
   gap: 100px;
 }
 
+.see-more {
+  text-align: center;
+  padding: 10px;
+  width: 200px;
+  background-color: #454532;
+  border: 1px solid #fff;
+
+}
+
+.see-more:hover {
+  background-color: #fff;
+  color: #121212;
+}
+
 .main-desc {
   display: flex;
   flex-direction: column;
@@ -218,6 +232,7 @@ img {
   margin: 30px;
   gap: 30px;
   flex: 1 1;
+  min-width: 200px;
 }
 
 .button-type2 {
@@ -257,10 +272,23 @@ img {
   margin: 0 3vw;
 }
 
-.pre-order__content--item img {
+.selling-item img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+}
+
+.sellign-item {
+  display: flex;
+  flex-direction: column;
+  flex: 200px 1 1;
+  background-color: #171717;
+  padding: 20px;
+  justify-content: stretch;
+  align-items: stretch;
+  gap: 10px;
+  max-width: 300px;
+  min-width: 100px;
 }
 
 .pre-order__content--item {

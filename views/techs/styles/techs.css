@@ -120,7 +120,8 @@ footer img {
 }
 
 .ul { 
-    display: flex block;
+    display: flex;
+	flex-direction: column;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -135,10 +136,9 @@ footer img {
 .cat-nav-link-p {
     text-align: center;
     display: block;
-    flex-basis: 150px;
     align-items: center;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 18px;
     padding: 20px;
     overflow: hidden;
     color: #49AAEE;

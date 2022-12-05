@@ -3,12 +3,13 @@
 /* styles for home page */
 body {
     margin: 0;
+    padding: 0;
 }
 
 .header {
     display: flex;
     list-style-type: none;
-    padding: 20px 0;
+    padding: 20px;
     background-color: rgb(240, 240, 240);
 }
 
@@ -66,10 +67,15 @@ body {
     transform: scale(1.1);
 }
 
+.content {
+    margin: 0;
+}
+
 .main_up {
-    background-image: url(../assets/techs/main/1back.jpg);
+    background-image: url(../../../assets/techs/main/bacgup.jpg);
     background-size: cover;
     background-attachment: fixed;
+    margin: 0;
 }
 
 .main_up h1 {

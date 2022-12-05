@@ -1,3 +1,129 @@
 @import "../../../styles/_global.css";
 
 /* styles for courses page */
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+p, body{
+    margin: 0px;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+.reg{
+    
+    align-items: center;
+    background-color: #ccd3d8;
+    width: 100%;
+    height: 200px;
+    z-index: 100;
+    object-fit: cover;
+    
+}
+.reg_img{
+    object-fit: cover;
+    height: 100px;
+    width: auto;
+    position: relative;
+    transition: transform 0.5s;
+}
+.reg_img:hover{
+    cursor: pointer;
+    transform: scale(110%);
+}
+.reg_img:active{
+    cursor: pointer;
+    transform: scale(110%);
+}
+
+
+.nav{
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:50px;
+}
+
+.nav-item{
+    display: flex
+}
+
+.flex{
+    display: flex;
+}
+.user_img{
+    height: 80px;
+    border-radius: 100%;
+    transition: transform 0.5s;
+}
+.user_img:hover{
+    transform: scale(130%);
+}
+.reg-text{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.card-img-top{
+    max-height: 200px;
+    max-width: 62.4px;
+    margin: 0 auto;
+}
+.shop-items{
+   margin-left: 40px;
+    justify-content: center;
+}
+.prod-foot{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    align-items: center;
+    
+}
+.btn-primary{
+    margin-left: 20px;
+}
+.price{
+    border-radius: 7%;
+    padding: 5px;
+    background-color: green;
+    color: white;
+}
+.user{
+    margin: 0 20px;
+}
+.user-foot{
+    margin: 30px;
+    text-align: center;
+}
+.page-foot{
+    position: absolute;
+    bottom: 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #ccd3d8;
+    width: 100%;
+    height: 200px;
+}
+.page-foot1{
+    
+    align-items: center;
+    text-align: center;
+    background-color: #ccd3d8;
+    width: 100%;
+    height: 200px;
+}
+.page-foot-text{
+    font-weight: bolder;
+    font-size: 30px;
+    position: relative;
+    top:100px;
+}

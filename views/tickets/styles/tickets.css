@@ -43,6 +43,7 @@ img {
 	backdrop-filter: blur(4px);
 	position: sticky;
 	top: 0;
+	z-index: 99;
 }
 
 .header__nav {
@@ -221,6 +222,31 @@ img {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
+}
+
+.header__profile-avatar {
+	width: 300px;
+	height: auto;
+	border-radius: 50%;
+	margin: 0 auto;
+	transition: all .2s ease;
+	border: 2px solid #BBBBBB;
+}
+
+.header__profile {
+	background-color: rgba(0,0,0,.8);
+	backdrop-filter: blur(4px);
+	padding: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	gap: 20px;
+	font-family: var(--fontJetBrainsMono);
+}
+
+.header__profile .header__welcome-title {
+	max-width: 100%;
 }
 
 .footer {

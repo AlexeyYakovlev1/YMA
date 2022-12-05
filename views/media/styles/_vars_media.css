@@ -1,0 +1,9 @@
+:root {
+  --mainFontColor: #eeee;
+  --anchorMainColor: #f6f6ee;
+  --anchorHoverColor: #acac83;
+  --mainBackgroundColor: #121212;
+  --additionalColor: #454532;
+  --mainGradient: linear-gradient(#202020, #151515);
+  --additionalFontColor: #747474;
+}

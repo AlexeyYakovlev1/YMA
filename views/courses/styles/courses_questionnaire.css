@@ -78,3 +78,33 @@
   .change-photos:hover {
     cursor: pointer;
   }
+
+
+.text_befor_yandex_map{
+  margin-top: 40px;
+}
+.yandex_maps{
+  color:#eee;
+  font-size:12px;
+  position:absolute;
+  top:0px;
+}
+
+.yandex_map_2{
+  color:#eee;
+  font-size:12px;
+  position:absolute;
+  top:14px;
+}
+
+
+
+.yandex_maps, .yandex_map_2{
+  color: #ffffff;
+
+}
+.yandex_map_3{
+  padding: 40px;
+  width: 100%;
+  position:relative;
+}

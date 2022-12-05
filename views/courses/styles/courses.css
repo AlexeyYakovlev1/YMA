@@ -1,0 +1,136 @@
+@import "./_global.css";
+
+.near_logo{
+    display: flex;
+    font-size: 32px;
+    justify-content: end;
+}
+
+.icon_user{
+    font-size: 40px;
+}
+
+.fake_header{
+    width: 100%;
+    height: 75px;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+h1{
+    text-align: center;
+    margin: 50px;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-img-top{
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 26px;
+    border-radius: 26px;
+}
+.card{
+    width: 350px;
+    border: 4px solid #dee2e6;
+    border-radius: 25px;
+}
+
+
+.plase-btn{
+    margin: 10px;
+    display: flex;
+    flex-grow: 0;
+    justify-content: space-evenly;
+}
+
+.btn-primary{
+    display: flex;
+}
+
+.first_registration_win{
+    display: flex;
+    height: 395px;
+    padding: 5px;
+}
+
+.without_registration{
+    width: 100%;
+    height: 100%;
+}
+
+.get_big_btn{
+    width: 100%;
+}
+
+.fake_footer_content{
+    height: 100px;
+}
+
+.bottom_strip{
+    width: 100%;
+    height: 128px;
+    background-color: #dee1e4;
+    display: flex;
+    justify-content: center;
+}
+
+.icon_in_footer{
+    margin: 32px 5px 32px 5px;
+    height: 64px;
+    border-radius: 50px;
+    
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 3s linear;
+}
+
+.github{
+    transition: all 800ms;
+}
+
+
+.github:hover{
+    /* background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(124,42,228,1) 32%, rgba(40,75,221,1) 65%, rgba(48,68,255,1) 100%);
+     */
+     background: rgb(34,193,195);
+     background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(124,42,228,1) 32%, rgba(40,75,221,1) 65%, rgba(48,68,255,1) 100%);
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+}
+
+.telegram{
+    transition: all 800ms;
+}
+
+.telegram:hover {
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(124,42,228,1) 32%, rgba(40,75,221,1) 65%, rgba(48,68,255,1) 100%);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.ing_person_box{
+    display: flex;
+    height: 256px;
+    width: 256px;
+}
+
+.contact-text{
+    color: #0f0f0f;
+}
+
+.to_center_box{
+    margin-top: 10px;
+}

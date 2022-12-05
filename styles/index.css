@@ -13,6 +13,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+	flex-wrap: wrap;
 }
 
 .header img {
@@ -25,6 +26,7 @@ body {
     flex-grow: 10;
     align-items: center;
     justify-content: center;
+	flex-wrap: wrap;
 }
 
 .header__nav-list {
@@ -35,13 +37,11 @@ body {
 }
 
 .header__nav-list li {
-    display: flex;
     padding: 15px;
     margin: 5px;
 }
 
 .header__nav-list a {
-    display: flex;
     text-decoration: none;
     font-size: 20px;
     color: #25B7D3;
@@ -52,7 +52,6 @@ body {
     transform: scale(1.1);
     color:#127488;
 }
-
 
 .main_up {
     background-image: url(../assets/techs/main/1back.jpg);
@@ -89,38 +88,9 @@ body {
     border-color: yellow;
 }
 
-@media (max-width: 500px) {
-    .header__nav-list li {
-        padding: 10px 5px 5px 5px;
-        margin: 3px;
-    }
-    .header__nav-list a {
-        font-size: 15px;
-        font-weight: 300;
-    }
-    
-    .main_up h1 {
-        padding: 50px 0px 20px 50px;
-        font-size: 18px;
-    }
-    
-    .main_up p {
-        padding: 0px 0px 20px 50px;
-        max-width: 360px;
-    }
-    
-    .buttonup {
-        padding: 0px 0px 50px 50px;
-    }
-    
-    .main_up button {
-        padding: 8px;
-        border-radius: 6px;
-    }
-}
-
 .main_info {
-    display: flex block;
+    display: flex;
+	flex-direction: column;
     justify-content: center;
     background-color: rgb(240, 240, 240);
     padding: 100px;
@@ -129,20 +99,19 @@ body {
 .main_info_cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .main_info h2 {
     color: black;
-    padding: 0px 100px 40px 100px;
     text-align: center;
 }
 
 .info_card {
-    display: flex block;
-    flex-wrap: wrap;
-
     margin: 50px;
+	text-align: center;
+	flex-grow: 1;
+	flex-basis: 300px;
 }
 
 .info_Img {
@@ -150,20 +119,20 @@ body {
     border: 1px solid gray;
     border-radius: 10px;
     width: 300px;
+	display: block;
+	margin: 0 auto;
     padding: 40px;
 }
 
 .info_card p {
     color: black;
     padding: 10px;
-    width: 300px;
-    text-align: center;
+    width: 100%;
 }
 
-
-
 .main_team {
-    display: flex block;
+    display: flex;
+	flex-direction: column;
     justify-content: center;
     background-image: url(../assets/main/teamback.jpg);
     background-size: cover;
@@ -171,11 +140,11 @@ body {
     padding: 100px;
 }
 
-.main_team_h2 {
+/* .main_team_h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 .main_team h2 {
     display: inline-block;
@@ -310,3 +279,34 @@ body {
   .container .info span .fa {
     color: #EF3B3A;
   }
+
+@media (max-width: 500px) {
+	.header__nav-list li {
+		padding: 10px 5px 5px 5px;
+		margin: 3px;
+	}
+
+	.header__nav-list a {
+		font-size: 15px;
+		font-weight: 300;
+	}
+
+	.main_up h1 {
+		padding: 50px 0px 20px 50px;
+		font-size: 18px;
+	}
+
+	.main_up p {
+		padding: 0px 0px 20px 50px;
+		max-width: 360px;
+	}
+
+	.buttonup {
+		padding: 0px 0px 50px 50px;
+	}
+
+	.main_up button {
+		padding: 8px;
+		border-radius: 6px;
+	}
+}

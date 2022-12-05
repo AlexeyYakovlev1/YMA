@@ -1,33 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Registration Form</title>
-    <link rel="stylesheet" href="styles/sign-up-form.css" />
-    <link rel="stylesheet" href="../../styles/scrollbar.css">
-  </head>
-  <body>
-    <h1>Registration Form</h1>
-    <form>
-      <div class="wrapper">
-        <fieldset>
-          <label for="first-name">Enter Your First Name: <input autocomplete="off" id="first-name" name="first-name" type="text" required /></label>
-          <label for="last-name">Enter Your Last Name: <input autocomplete="off" id="last-name" name="last-name" type="text" required /></label>
-          <label for="email">Enter Your Email: <input autocomplete="off" id="email" name="email" type="email" required /></label>
-          <label for="new-password">Create a New Password: <input autocomplete="off" id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
-        </fieldset>
-        <fieldset>
-          <label for="personal-account"><input autocomplete="off" class="inline" id="personal-account" type="radio" name="account-type" required /> Personal Account</label>
-          <label for="business-account"><input autocomplete="off" class="inline" id="business-account" type="radio" name="account-type" required /> Business Account</label>
-          <label for="terms-and-conditions" name="terms-and-conditions">
-            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" /> I accept the <a href="#">terms and conditions</a>
-          </label>
-        </fieldset>
-        <div class="flex">
-          <input type="submit" value="Sign up" />
-          <a href="media.html" class="return">Return home</a>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/sign-up-form.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="email" placeholder="Enter your email" required>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" required>
+          </div>
         </div>
+        
+        <div class="button">
+          <input type="submit" value="Sign up">
+        </div>
+        <a class="button" href="media.html">Return home</a>
       </form>
-      </div>
-  </body>
+    </div>
+  </div>
+</body>
+
 </html>

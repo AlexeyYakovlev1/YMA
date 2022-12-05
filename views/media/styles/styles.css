@@ -376,7 +376,9 @@ img {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 0 100px;
+  padding: 100px 100px;
+  gap: 10px;
+
 }
 
 .flex {
@@ -407,3 +409,30 @@ img {
 section[id] {
   padding: 10vh 0;
 }
+
+@media (max-width: 500px) {
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__nav a {
+    margin-left: 0 !important;
+  }
+
+  .banner1,
+  .banner2 {
+    height: 80vh !important;
+  }
+
+  .footer h2,
+  .footer p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .header__nav a:nth-child(n+2):nth-child(-n+4){
+    display: none !important;
+  }
+}
+

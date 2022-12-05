@@ -3,40 +3,69 @@ body {
 }
 
 .header {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    padding: 20px;
+    background-color: rgb(240, 240, 240);
     position: sticky;
     top: 0;
     left: 0;
-    background-color: rgb(240, 240, 240);
-    z-index: 10;
-}
-
-.header__nav {
-    display: flex;
-    position: sticky;
-    top: 0;
+    z-index: 5;
 }
 
 .mainicon {
-    flex-grow: 1;
-    flex-basis: 20px;
-    width: 40px;
-    justify-content: center;
+    flex-grow: 2;
+    height: 120px;
     align-items: center;
+    justify-content: center;
+}
+
+.header__nav {
+    flex-grow: 8;
+    align-items: center;
+    justify-content: center;
 }
 
 .header__nav-list {
-    display: inline-flex;
-    flex-grow: 11;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.header__nav-list li {
     list-style-type: none;
+    padding: 15px;
+    margin: 5px;
 }
 
 .header__nav-list a {
     text-decoration: none;
-    padding: 10px;
-    margin: 20px;
     font-size: 30px;
+    color: #49AAEE;
+    transition: all 0.6s;
+}
+
+.header__nav-list a:hover {
+    transform: scale(1.1);
+    color:#127488;
+}
+
+.hubback {
+    display: flex;
+    flex-grow: 2;
+}
+
+.hubback img { 
+    width: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+}
+
+.hubback img:hover {
+    transform: scale(1.1);
 }
 
 footer {
@@ -112,16 +141,17 @@ footer img {
     font-size: 25px;
     padding: 20px;
     overflow: hidden;
+    color: #49AAEE;
 }
 
 .active {
-    background-color: #442B48;
-    color: rgb(236, 230, 230);
+    background-color: #ffffff;
+    color:#3494d8;
 }
 
 .tech_content_cont {
     display: block;
-    background-color: #442B48;
+    background-color: #ffffff;
     position: relative;
     justify-content: flex-end;
     margin-left: 17%;
@@ -137,17 +167,20 @@ footer img {
 .tech-card {
     padding: 5px;
     margin: 10px;
-    border: 1px solid black;
+    border: 1px solid unset;
+    background-color: lightgray;
+    border-bottom: 2px solid gray;
+    border-right: 2px solid gray;
     border-radius: 10px;
-    background-color: #726E60;
 }
 
 .tech-card img {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    border: 1px solid black;
-    border-radius: 5px;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    border-radius: 10px;
 }
 
 .tech-card h3 {
@@ -194,7 +227,7 @@ footer img {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 100%;
     background-color: unset;
 }
@@ -208,17 +241,83 @@ button.buy {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 20px;
     background-color: unset;
     padding: 5px 10px;
-    color: black;
+    color: gray;
 }
 
 .cardbut button:hover {
     transition: all 0.4s;
     transform: scale(1.1);
-    border-color: yellow;
+    border-color: black;
     cursor: pointer;
-    color: yellow;
+    color: black;
+}
+
+footer {
+    background-color: #000000;
+    margin: 0;
+    padding: 50px;
+}
+
+.main_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #25B7D3;
+}
+
+.footer_refs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_refs a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all 0.6s;
+    margin: 20px;
+}
+
+.footer_refs img {
+    width: 50px;
+    margin: 10px;
+}
+
+.footer_vk:hover {
+    background-color: #2669c2;
+}
+
+.footer_ok:hover {
+    background-color: #e7b54a;
+}
+
+.footer_inst:hover {
+    background-color: #b562d6;
+}
+
+.footer_fb:hover {
+    background-color: #354ac5;
+}
+
+.footer_sn:hover {
+    background-color: #c8d142;
+}
+
+.footer_tw:hover {
+    background-color: #3dafd1;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    color: rgb(240, 240, 240);
 }

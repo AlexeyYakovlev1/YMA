@@ -127,3 +127,11 @@ header{
     position: relative;
     top:100px;
 }
+.card{
+    margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+    .reg{
+        height: 300px;
+    }
+}

@@ -3,12 +3,12 @@
 header {
     width:100%;
     height: 300px;
-
+    background-color: #333333;
   }
 .ShapkaLol{
     width:100%;
     height: 100%;
-
+    object-fit: cover;
 
 } 
 body{
@@ -56,5 +56,8 @@ img{
     color:white;
     background-color: #333333;
 }  
+.allprize{
+    font-weight: bold;
+}
 
 

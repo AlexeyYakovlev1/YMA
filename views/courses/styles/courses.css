@@ -120,3 +120,17 @@ h1{
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
 }
+
+.ing_person_box{
+    display: flex;
+    height: 256px;
+    width: 256px;
+}
+
+.contact-text{
+    color: #0f0f0f;
+}
+
+.to_center_box{
+    margin-top: 10px;
+}

@@ -8,6 +8,7 @@ body {
 
 .header {
     display: flex;
+    align-items: center;
     list-style-type: none;
     padding: 20px;
     background-color: rgb(240, 240, 240);
@@ -107,46 +108,113 @@ body {
     border-color: yellow;
 }
 
-.main_info {
+.main_trends {
     display: flex;
 	flex-direction: column;
     justify-content: center;
     background-color: rgb(240, 240, 240);
-    padding: 100px;
+    padding: 100px 200px;
 }
 
-.main_info_cards {
+.main_trend_cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
-.main_info h2 {
+.main_trends h2 {
     color: black;
     text-align: center;
+    padding: 0 0 50px 0;;
 }
 
-.info_card {
-    margin: 50px;
-	text-align: center;
-	flex-grow: 1;
-	flex-basis: 300px;
-}
-
-.info_Img {
-    background-image: url(../assets/main/8542571_square_full_icon.png);
-    border: 1px solid gray;
+.trend_card {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid unset;
     border-radius: 10px;
-    width: 300px;
-	display: block;
-	margin: 0 auto;
-    padding: 40px;
+    background-color: unset;
 }
 
-.info_card p {
+.trend_card img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.trend_card h3 {
     color: black;
-    padding: 10px;
-    width: 100%;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.trend_card p {
+    font-size: 20px;
+    margin: 5px;
+    color: black;
+    width: 250px;
+}
+
+.trend_card:hover {
+    transition: all 0.6s;
+    transform: scale(1.05);
+}
+
+.cardbut {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cardbut img {
+    border: none;
+}
+
+.cardbut button {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardbut_act {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: unset;
+}
+
+.cardbut button img {
+    width: 22px;
+    height: 22px;
+}
+
+button.buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: unset;
+    padding: 5px 10px;
+    color: black;
+}
+
+.cardbut button:hover {
+    transition: all 0.4s;
+    transform: scale(1.1);
+    border-color: gray;
+    cursor: pointer;
+
 }
 
 .main_team {
@@ -328,4 +396,71 @@ body {
 		padding: 8px;
 		border-radius: 6px;
 	}
+}
+
+
+footer {
+    background-color: #000000;
+    margin: 0;
+    padding: 50px;
+}
+
+.main_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #25B7D3;
+}
+
+.footer_refs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_refs a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all 0.6s;
+    margin: 20px;
+}
+
+.footer_refs img {
+    width: 50px;
+    margin: 10px;
+}
+
+.footer_vk:hover {
+    background-color: #2669c2;
+}
+
+.footer_ok:hover {
+    background-color: #e7b54a;
+}
+
+.footer_inst:hover {
+    background-color: #b562d6;
+}
+
+.footer_fb:hover {
+    background-color: #354ac5;
+}
+
+.footer_sn:hover {
+    background-color: #c8d142;
+}
+
+.footer_tw:hover {
+    background-color: #3dafd1;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    color: rgb(240, 240, 240);
 }

@@ -140,12 +140,6 @@ body {
     padding: 100px;
 }
 
-/* .main_team_h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 .main_team h2 {
     display: inline-block;
     text-align: center;
@@ -195,8 +189,9 @@ body {
     width: 360px;
     padding: 100px 0;
     margin: auto;
-  }
-  .form {
+}
+
+.form {
     position: relative;
     z-index: 1;
     background: #FFFFFF;
@@ -279,6 +274,72 @@ body {
   .container .info span .fa {
     color: #EF3B3A;
   }
+
+footer {
+    background-color: #000000;
+    margin: 0;
+    padding: 50px;
+}
+
+.main_footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #25B7D3;
+}
+
+.footer_refs {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer_refs a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: all 0.6s;
+    margin: 20px;
+}
+
+.footer_refs img {
+    width: 50px;
+    margin: 10px;
+}
+
+.footer_vk:hover {
+    background-color: #2669c2;
+}
+
+.footer_ok:hover {
+    background-color: #e7b54a;
+}
+
+.footer_inst:hover {
+    background-color: #b562d6;
+}
+
+.footer_fb:hover {
+    background-color: #354ac5;
+}
+
+.footer_sn:hover {
+    background-color: #c8d142;
+}
+
+.footer_tw:hover {
+    background-color: #3dafd1;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    color: rgb(240, 240, 240);
+}
 
 @media (max-width: 500px) {
 	.header__nav-list li {

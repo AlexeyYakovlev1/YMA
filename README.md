@@ -1,4 +1,4 @@
-#YMA - youth musical association
+<h1>YMA - youth musical association</h1>
 
 Над проектом работали:
 

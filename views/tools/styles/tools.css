@@ -57,6 +57,9 @@ header{
     position: sticky;
     top: 0px;
 }
+main{
+    background-color: white;
+}
 .reg{
     
     align-items: center;

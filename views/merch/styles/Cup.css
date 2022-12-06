@@ -1,0 +1,40 @@
+img{
+    width: 400px;
+}
+.blockcenter{
+    margin-left: 400px;
+}
+header {
+    width:100%;
+    height: 300px;
+    background-color: #333333;
+  }
+.ShapkaLol{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+} 
+.prize{
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    margin: 520px 0px 0px 320px;
+}
+.blockofprize{
+    display: flex;
+    flex-grow: 0;
+    width: 1000px;
+    position: relative;
+}
+h1{
+    font-weight: bold;
+    font-size: 60px;
+    text-align: left;
+    margin: 30px;
+}
+
+body{
+    position: relative;
+}

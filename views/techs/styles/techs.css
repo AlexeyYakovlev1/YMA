@@ -128,7 +128,7 @@ footer img {
     width: 17%;
     background-color: rgb(236, 230, 230);
     height: inherit; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
+    position: absolute; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
     z-index: 0;
 }
@@ -155,7 +155,7 @@ footer img {
     position: relative;
     justify-content: flex-end;
     margin-left: 17%;
-    padding: 40px;
+    padding: 0 40px 40px 40px;
 }
 
 .tech-cont {
@@ -275,6 +275,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+	flex-wrap: wrap;
 }
 
 .footer_refs a {

@@ -1,8 +1,33 @@
-@import "./_global.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* styles for home page */
+:root {
+	--fontMontserrat: "Montserrat", sans-serif;
+	--fontJetBrainsMono: "JetBrains Mono", monospace;
+	--fontLobster: "Lobster", cursive;
+	--colorTicketsPage: #414141;
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+}
+
 body {
-    margin: 0;
+	font-family: var(--fontMontserrat);
+	font-weight: 400;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .header {
@@ -14,6 +39,7 @@ body {
     top: 0;
     left: 0;
 	flex-wrap: wrap;
+	z-index: 99;
 }
 
 .header img {
@@ -294,6 +320,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+	flex-wrap: wrap;
 }
 
 .footer_refs a {

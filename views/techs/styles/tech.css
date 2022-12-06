@@ -1,9 +1,33 @@
-@import "../../../styles/_global.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-/* styles for home page */
+:root {
+	--fontMontserrat: "Montserrat", sans-serif;
+	--fontJetBrainsMono: "JetBrains Mono", monospace;
+	--fontLobster: "Lobster", cursive;
+	--colorTicketsPage: #414141;
+}
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+}
+
 body {
-    margin: 0;
-    padding: 0;
+	font-family: var(--fontMontserrat);
+	font-weight: 400;
+}
+
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 20px;
 }
 
 .header {
@@ -113,7 +137,7 @@ body {
 	flex-direction: column;
     justify-content: center;
     background-color: rgb(240, 240, 240);
-    padding: 100px 200px;
+    padding: 100px 100px;
 }
 
 .main_trend_cards {
@@ -125,7 +149,7 @@ body {
 .main_trends h2 {
     color: black;
     text-align: center;
-    padding: 0 0 50px 0;;
+    padding: 0 0 50px 0;
 }
 
 .trend_card {
@@ -226,12 +250,6 @@ button.buy {
     background-attachment: fixed;
     padding: 100px;
 }
-
-/* .main_team_h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
 
 .main_team h2 {
     display: inline-block;
@@ -367,37 +385,6 @@ button.buy {
     color: #EF3B3A;
   }
 
-@media (max-width: 500px) {
-	.header__nav-list li {
-		padding: 10px 5px 5px 5px;
-		margin: 3px;
-	}
-
-	.header__nav-list a {
-		font-size: 15px;
-		font-weight: 300;
-	}
-
-	.main_up h1 {
-		padding: 50px 0px 20px 50px;
-		font-size: 18px;
-	}
-
-	.main_up p {
-		padding: 0px 0px 20px 50px;
-		max-width: 360px;
-	}
-
-	.buttonup {
-		padding: 0px 0px 50px 50px;
-	}
-
-	.main_up button {
-		padding: 8px;
-		border-radius: 6px;
-	}
-}
-
 
 footer {
     background-color: #000000;
@@ -418,6 +405,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+	flex-wrap: wrap;
 }
 
 .footer_refs a {
@@ -463,4 +451,35 @@ footer p {
     justify-content: center;
     padding: 20px 0 20px 0;
     color: rgb(240, 240, 240);
+}
+
+@media (max-width: 500px) {
+	.header__nav-list li {
+		padding: 10px 5px 5px 5px;
+		margin: 3px;
+	}
+
+	.header__nav-list a {
+		font-size: 15px;
+		font-weight: 300;
+	}
+
+	.main_up h1 {
+		padding: 50px 0px 20px 50px;
+		font-size: 18px;
+	}
+
+	.main_up p {
+		padding: 0px 0px 20px 50px;
+		max-width: 360px;
+	}
+
+	.buttonup {
+		padding: 0px 0px 50px 50px;
+	}
+
+	.main_up button {
+		padding: 8px;
+		border-radius: 6px;
+	}
 }

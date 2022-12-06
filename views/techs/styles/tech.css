@@ -137,7 +137,7 @@ body {
 	flex-direction: column;
     justify-content: center;
     background-color: rgb(240, 240, 240);
-    padding: 100px 200px;
+    padding: 100px 100px;
 }
 
 .main_trend_cards {
@@ -149,7 +149,7 @@ body {
 .main_trends h2 {
     color: black;
     text-align: center;
-    padding: 0 0 50px 0;;
+    padding: 0 0 50px 0;
 }
 
 .trend_card {

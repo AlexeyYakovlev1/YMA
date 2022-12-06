@@ -134,4 +134,7 @@ header{
     .reg{
         height: 300px;
     }
+    .page-foot{
+        position: static;
+    }
 }

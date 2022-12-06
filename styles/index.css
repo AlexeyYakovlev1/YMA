@@ -320,6 +320,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+	flex-wrap: wrap;
 }
 
 .footer_refs a {
